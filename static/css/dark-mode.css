@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Dark Mode Styles & Futuristic Aesthetics
+   ========================================================================== */
+body.dark-mode {
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --primary-light: rgba(59, 130, 246, 0.14);
+    --primary-glow: rgba(59, 130, 246, 0.35);
+    
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    
+    --bg-primary: #080b12;
+    --bg-secondary: #0d121f;
+    --bg-card: #111726;
+    --bg-card-glass: rgba(17, 23, 38, 0.82);
+    --bg-nav-glass: rgba(8, 11, 18, 0.88);
+    
+    --border-color: #1e293b;
+    --border-hover: #334155;
+    --border-glass: rgba(30, 41, 59, 0.8);
+    
+    --card-gradient: linear-gradient(135deg, rgba(17, 23, 38, 0.9) 0%, rgba(13, 18, 31, 0.7) 100%);
+    
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4);
+    --shadow-md: 0 6px 16px -2px rgb(0 0 0 / 0.5), 0 2px 6px -1px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 16px 32px -4px rgb(0 0 0 / 0.6), 0 6px 12px -2px rgb(0 0 0 / 0.4);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+#theme-toggle:hover {
+    color: #38bdf8;
+    border-color: #38bdf8;
+    transform: scale(1.05);
+}
+
+/* Scrolled theme toggle in dark mode */
+.site-header.scrolled #theme-toggle {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+.site-header.scrolled #theme-toggle:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Icon visibility */
+body.light-mode .moon { display: block; }
+body.light-mode .sun { display: none; }
+body.dark-mode .moon { display: none; }
+body.dark-mode .sun { display: block; }
+
+/* Dark mode specific enhancements for other sections */
+body.dark-mode .pillar-card {
+    background: var(--card-gradient);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .project-card-clean {
+    background: var(--card-gradient);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .project-card-clean:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 12px 30px -4px rgba(59, 130, 246, 0.15);
+}
+
+body.dark-mode .arch-note {
+    background: #090d16;
+    border-left-color: #3b82f6;
+    color: #94a3b8;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #0b0f1a;
+    border-color: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+body.dark-mode .contact-card-item {
+    background: var(--card-gradient);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .contact-card-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 8px 24px -2px rgba(59, 130, 246, 0.2);
+}
+
+body.dark-mode .contact-card-icon {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+}
+
+body.dark-mode .badge-tag {
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+body.dark-mode .badge-tag.wwdc {
+    background: rgba(244, 114, 182, 0.15);
+    color: #f472b6;
+    border-color: rgba(244, 114, 182, 0.3);
+}
+
+body.dark-mode .badge-tag.civic {
+    background: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+    border-color: rgba(52, 211, 153, 0.3);
+}
+
+body.dark-mode .badge-tag.agentic {
+    background: rgba(167, 139, 250, 0.15);
+    color: #a78bfa;
+    border-color: rgba(167, 139, 250, 0.3);
+}
